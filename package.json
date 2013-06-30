@@ -1,0 +1,26 @@
+{
+  "name": "replit",
+  "version": "0.0.1",
+  "description": "replit",
+  "main": "repl.js",
+  "dependencies": {
+    "commander": "~1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Hypercubed/replit.git"
+  },
+  "keywords": [
+    "node",
+    "repl"
+  ],
+  "author": "J. Harshbarger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hypercubed/replit/issues"
+  }
+}

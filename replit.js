@@ -12,7 +12,7 @@ program
   
   .parse(process.argv);
   
-var cmd = program.args[0];
+var cmd = program.args[0];  // TODO: If null exit with error
 var prompt = cmd+'> ';
 
 var rl = readline.createInterface({
@@ -22,9 +22,11 @@ var rl = readline.createInterface({
   
 rl.setPrompt(prompt, prompt.length);
 rl.prompt();
+//TODO: Auto-complete?
   
 rl.on('line', function(line,err) {
-	// TODO: Handle repl commands
+	// TODO: Handle repl commands (.exit, .debug)
+	// TODO: git way to run bare command (.ls)
 
 	var cp = child_process.spawn(cmd,line.split(' '));  // Todo: need to respect quotes, etc
 	cp.stdout.pipe(process.stdout);
