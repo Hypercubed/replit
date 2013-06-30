@@ -39,7 +39,8 @@ rl.setPrompt(prompt);
 rl.prompt();
 //TODO: Auto-complete?  Support https://github.com/defunkt/repl-completion
 //TODO: History?
-
+//Color  coded
+//Use logger (caterpillar?)
 
 rl.on('line', function(line,err) {
     // TODO: Handle repl commands (.exit, .debug)
@@ -74,6 +75,9 @@ rl.on('line', function(line,err) {
         _cmd = cmd;
         _argv = line.split(' ');  // Todo: need to respect quotes, etc
     }
+    
+    if (_argv[0] == 'exit')
+        console.log('Warning', 'Use Ctrl-D (i.e. EOF) to exit');
 
     var cp = child_process.spawn(_cmd,_argv);
     cp.stdout.pipe(process.stdout);
