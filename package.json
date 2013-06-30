@@ -2,7 +2,10 @@
   "name": "replit",
   "version": "0.0.1",
   "description": "replit",
-  "main": "repl.js",
+  "main": "replit.js",
+  "bin": {
+    "replit": "./replit.js"
+  },
   "dependencies": {
     "commander": "~1.2.0"
   },
