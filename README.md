@@ -4,7 +4,7 @@ replit
 sometimes you need a repl (inspired by http://defunkt.io/repl/)
 
 ## DESCRIPTION
-replist wraps a non-interactive shell command in an interactive read-eval-print-loop (repl) prompt.
+`replit` wraps a non-interactive shell command in an interactive read-eval-print-loop (repl) prompt.
 Each line you type into the prompt is executed as arguments to command.
 Anything written to standard output or standard error by the command is displayed.
 
