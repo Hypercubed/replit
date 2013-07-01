@@ -15,7 +15,7 @@ WIP
 ## Installation
 
 ```
-$ npm install -g hypercubed/replit
+$ npm install -g Hypercubed/replit
 ```
 
 ## Usage
