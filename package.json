@@ -1,16 +1,17 @@
 {
   "name": "replit",
-  "version": "0.0.1",
-  "description": "replit",
+  "version": "0.0.2",
+  "description": "sometimes you need a repl (inspired by http://defunkt.io/repl/)",
   "bin": {
-    "replit": "./bin/replit.js"
+    "replit": "./bin/replit"
   },
-  "dependencies": {
-    "commander": "~1.2.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec"
+  },
+  "author": {
+    "name": "Jayson Harshbarger",
+    "email": "",
+    "url": "https://github.com/Hypercubed"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
     "node",
     "repl"
   ],
-  "author": "J. Harshbarger",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Hypercubed/replit/issues"
+  "bugs": "https://github.com/Hypercubed/replit/issues",
+  "dependencies": {
+    "commander": "~2.0.0",
+    "autocmdr": "~0.0.4"
+  },
+  "devDependencies": {
   }
 }
