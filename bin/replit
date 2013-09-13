@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+'use strict';
+
+var program  = require('commander');
+
+//
+var repl         = require('../lib/replit.js').repl;
+
+require('autocmdr/lib/logger')(program);
+require('autocmdr/lib/package')(program);
+
+program
+    .usage('[options] <cmd>')
+    .option('-p, --pmt <prompt>', 'set readline prompt')
+    .parse(process.argv);
+
+if (program.args.length < 1 ) {
+    program.log.error('No command specified. See \''+program._name+' --help\'.');
+    program.outputHelp();
+    process.exit(1);
+}
+
+var cmd = program.args.join(' ');
+
+var options = {};
+options.prompt = program.pmt || cmd+'> ';
+options.debug = program.debug || false;
+options.name = program.name || 'replit';
+
+repl(cmd, options);
+
+
