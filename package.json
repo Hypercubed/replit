@@ -5,6 +5,10 @@
   "bin": {
     "replit": "./bin/replit"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {
     "test": "mocha -R spec"
   },
