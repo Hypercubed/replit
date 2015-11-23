@@ -24,9 +24,9 @@
   "license": "MIT",
   "bugs": "https://github.com/Hypercubed/replit/issues",
   "dependencies": {
+    "autocmdr": "~0.0.4",
     "commander": "~2.0.0",
-    "autocmdr": "~0.0.4"
+    "win-spawn": "^2.0.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
