@@ -1,5 +1,5 @@
 {
-  "name": "replit",
+  "name": "@hypercubed/replit",
   "version": "0.0.3",
   "description": "sometimes you need a repl (inspired by http://defunkt.io/repl/)",
   "bin": {

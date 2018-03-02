@@ -14,13 +14,13 @@ WIP
 # Installation
 
 ```
-	$ npm install -g Hypercubed/replit
+	$ npm install -g @hypercubed/replit
 ```
 
 # Usage
 
 ```
-	Usage: replit.js [options] <cmd>
+	Usage: replit [options] <cmd>
 
 	Options:
 
@@ -28,9 +28,15 @@ WIP
 	-V, --version  output the version number
 ```
 
+# Example
+
+```
+replit echo
+```
+
 # License
 
-Copyright (c) 2013 Jayson Harshbarger
+Copyright (c) 2013-2018 Jayson Harshbarger
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
 # Acknowledgments
