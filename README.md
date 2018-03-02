@@ -9,7 +9,7 @@ Each line you type into the prompt is executed as arguments to command.
 Anything written to standard output or standard error by the command is displayed.
 
 ## Status
-WIP
+Useful but not under active development.
 
 # Installation
 
